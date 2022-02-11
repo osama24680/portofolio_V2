@@ -1,0 +1,644 @@
+:root {
+    --main_color: #015ECD;
+    --gray_color: #4e4e4e;
+}
+
+::selection {
+    background: var(--main_color);
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+body{
+    background: #f5f5f5;
+}
+* {
+    box-sizing: border-box;
+    transition: .3s;
+    list-style: none;
+}
+
+section {
+    padding: 40px 0;
+}
+.textHeader{
+    font-size: 3.1rem;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+.textHelping{
+    color:var(--gray_color);
+    font-size:.9rem;
+    margin-top: 20px;
+}
+.line{
+    padding-bottom: 70px;
+    text-align: center
+}
+.line h3{
+    position: relative;
+}
+.line h3::after{
+    content:'';
+    background-color: #0078ff;
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    left:50%;
+    top:190%;
+    transform:translateX(-50%)
+}
+
+/* =================================--------------------header-------------------================================= */
+
+header {
+    height: 100vh;
+    overflow: hidden
+}
+
+header .slider {
+    background-image: url("../images/me.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header .slider .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #221f1fb0;
+}
+
+
+.navbar-light .navbar-nav .nav-item {
+    padding: 10px 0 10px 18px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.3s;
+    letter-spacing: 0.4px;
+}
+
+.navbar .navbar-collapse ul li:hover a {
+    border-bottom: 2px solid white;
+}
+
+header .slider .layer .content h1 {
+    font-size: 3.5rem
+}
+
+
+nav .ulContainer {
+    overflow: hidden;
+    border: 0;
+    outline: none;
+    outline: 0;
+}
+
+nav .ulContainer ul {
+    overflow: hidden;
+    border: 0;
+    outline: none;
+    outline: 0;
+}
+
+nav .ulContainer ul li {
+    overflow: hidden;
+    border: 0;
+    outline: none;
+    outline: 0;
+}
+
+/* =================================--------------------About-------------------================================= */
+
+
+
+.about .personal_card {
+    width: 100%;
+    background: #fff;
+}
+
+.about .personal_card .leftAbout {
+    width: 45%;
+}
+
+.about .personal_card .leftAbout .data .myimg {
+    width: 35%;
+}
+
+.about .personal_card .leftAbout .data .mydata {
+    width: 47%;
+}
+
+.about .personal_card .leftAbout .data .mydata p {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.03rem;
+}
+
+.about .personal_card .leftAbout .data .mydata p span {
+    font-weight: normal;
+    color: var(--gray_color);
+    font-size: 1rem;
+    padding-left: .3rem
+}
+
+.about .personal_card .leftAbout .allSkills .programming_skill .myskill {
+    margin-top: 1.2rem;
+}
+
+.about .personal_card .leftAbout .allSkills .programming_skill .myskill p {
+    color: var(--gray_color);
+    margin-bottom: .3rem;
+}
+
+.about .personal_card .rightAbout {
+    width: 47%;
+}
+
+.about .personal_card .rightAbout h2 {
+    position: relative
+}
+.about .personal_card .rightAbout h2::before {
+    content: '';
+    width: 100px;
+    height: 3.5px;
+    background: blue;
+    position: absolute;
+    left:0%;
+    z-index: 500;
+    top:115%;
+    
+
+}
+
+.about .personal_card .rightAbout p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color:var(--gray_color);
+    font-weight:normal;
+    line-height: 1.7
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================--------------------services-------------------================================= */
+
+.services .myservices div{
+    width: 32%;
+    margin-top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+.services .myservices div i{
+    color:var(--gray_color);
+    background:#fff;
+    padding: 30px;
+    border:10px solid #0078ff;
+    transition: .5s;
+}
+.services .myservices div i:hover{
+    border:10px solid #dfdfdf;
+    background:#0078ff;
+    color:#fff;
+}
+.services .work  {
+    background-image: url("../images/counters-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.services .work  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0078ffb0;
+}
+.services .work  .layer .statistics div{
+    width: 22%;
+    
+}
+.services .work  .layer .statistics div i{
+    padding: 25px;
+    border:10px solid #cde1f8;
+}
+
+/* =================================--------------------portofolio-------------------================================= */
+.portofolio .cardElements .card{
+    width: 32%;
+    margin-top: 40px;
+    overflow: hidden
+}
+.portofolio .cardElements .card .cardImg{
+    overflow: hidden
+}
+.portofolio .cardElements .card .cardImg img{
+    width: 100%;
+    display: block;
+    transition: 1s;
+}
+.portofolio .cardElements .card .card-body h5{
+    font-size: 1.2rem;
+}
+.portofolio .cardElements .card .card-body p{
+    font-size: .8rem;
+}
+.portofolio .cardElements .card .card-body p span{
+    color:var(--main_color)
+}
+.portofolio .cardElements .card .card-body i{
+    color:var(--main_color);
+    cursor: pointer;
+}
+.portofolio .cardElements .card:hover img{
+    transform:scale(1.3);
+    cursor: pointer;
+}
+.portofolio .opinions  {
+    background-image: url("../images/overlay-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+
+.portofolio .opinions  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0078ffb0;
+    z-index: 50;
+}
+ .carousel-indicators {
+   top:105%
+}
+.carousel-indicators [data-bs-target] {
+   background:#8dbef2;
+   border-radius: 50%;
+   width: 13px;
+   height: 0px;
+}
+
+.portofolio .opinions  .layer  .carousel .carousel-inner .carousel-item {
+    margin-top: 10%;
+}
+.portofolio .opinions  .layer  .carousel .carousel-inner .carousel-item p{
+    padding: 0px 200px;
+    font-size: 1.2rem;
+}
+
+/* =================================--------------------blog-------------------================================= */
+.blog .cardElements .card{
+    width: 32%;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog .cardElements .card .cardImg img{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+.blog .cardElements .card .card-body{
+    padding:2rem 1.2rem;
+}
+.blog .cardElements .card .card-body h5{
+    font-size: 1.2rem;
+}
+.blog .cardElements .card .card-body p{
+    font-size: 1rem;
+    color:var(--gray_color)
+}
+.blog .cardElements .card .time{
+    background:#f7f7f7;
+    height: 50px;
+}
+.blog .cardElements .card .time .data img{
+    width: 10%;
+}
+
+.blog .cardElements .card .time .clock{
+    color:var(--gray_color)
+}
+.blog .cardElements .card .time .data,
+.blog .cardElements .card .time .clock{
+    padding-top: 10px;
+}
+.blog .cardElements .card .label{
+    padding:7px 15px;
+    background-color:#0078ff;
+    position: absolute;
+    top:50%;
+    left:38%;
+    font-size:.7rem;
+    transform: translateY(-50%);
+}
+/* =================================--------------------contact-------------------================================= */
+.contact {
+    background-image: url("../images/overlay-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 50px;
+}
+
+
+.contact .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0078ffb0;
+}
+.contact .layer .contactBox{
+    margin-top: 80px;
+    width: 100%;
+    background:#fff;
+    padding: 50px;
+}
+.contact .layer .contactBox .message h2{
+    position: relative;
+}
+.contact .layer .contactBox .message h2::after{
+    content: "";
+    position: absolute;
+    top:125%;
+    left:0;
+    background:var(--main_color);
+    width:100px;
+    height: 3px;
+    
+}
+.contact .layer .contactBox .message{
+    width: 48%;
+}
+.contact .layer .contactBox .message .inputData{
+    margin-top: 50px;
+}
+.contact .layer .contactBox .message .inputData textarea{
+    height: 120px;
+}
+.form-control{
+    border-radius: 0;
+}
+.contact .layer .contactBox .message .mybutton button{
+    font-size:1.1rem;
+    padding: .5rem 1rem;
+}
+
+.contact .layer .contactBox .touch{
+    width: 48%;
+}
+.contact .layer .contactBox .touch h2{
+    position: relative;
+}
+.contact .layer .contactBox .touch h2::after{
+    content: "";
+    position: absolute;
+    top:125%;
+    left:0;
+    background:var(--main_color);
+    width:100px;
+    height: 3px;
+    
+}
+
+.contact .layer .contactBox .touch .touchContent{
+    margin-top: 40px;
+}
+.contact .layer .contactBox .touch .touchContent p{
+    color:var(--gray_color);
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.contact .layer .contactBox .touch .touchContent .contactIcons {
+    margin-top: 30px;
+}
+.contact .layer .contactBox .touch .touchContent .contactIcons p{
+    color:var(--gray_color);
+    font-size: .9rem;
+    font-weight: normal;
+}
+.contact .layer .contactBox .touch .touchContent .contactIcons p i{
+    color:var(--main_color);
+    margin-right: 20px;
+}
+.contact .layer .contactBox .touch .touchContent .socialIcons{
+    margin-top: 20px;
+}
+.contact .layer .contactBox .touch .touchContent .socialIcons i{
+    font-size: 1.2rem;
+    padding: 9px;
+    border-radius: 50%;
+    border:3px solid #0078ffb0;
+    margin-left: 10px;
+    cursor: pointer
+}
+.contact .layer .contactBox .touch .touchContent .socialIcons i:hover{
+    border:3px solid #8dbef2;
+    background-color:#0078ffb0
+}.contact .layer .contactBox .touch .touchContent .socialIcons i:nth-child(1){
+    margin-left: 0;
+}
+.contact .layer .contactBox .touch .touchContent .socialIcons i:hover:nth-child(1){
+    color:#1877f2;
+}
+.contact .layer .contactBox .touch .touchContent .socialIcons i:hover:nth-child(2){
+    color:#9146ff
+}
+.contact .layer .contactBox .touch .touchContent .socialIcons i:hover:nth-child(3){
+    color:#e1306c
+}
+.contact .layer .contactBox .touch .touchContent .socialIcons i:hover:nth-child(4){
+    color:#34a853
+}
+
+
+/* =================================--------------------footer-------------------================================= */
+.footer{
+    background:#0062d3;
+    padding: 25px;
+    box-shadow: 0px 10px 10px #888
+}
+.footer p{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+@media(max-width:1400px) {}
+
+@media(max-width:1200px) {
+    header .slider .layer .content h1 {
+        font-size: 3.2rem
+    }
+    .portofolio .opinions  .layer  .carousel .carousel-inner .carousel-item p{
+        padding: 0px 100px;
+    }
+
+}
+
+@media(max-width:991px) {
+    .navbar .navbar-collapse {
+        background: #fff;
+        margin-top: 80px;
+    }
+
+    .navbar-light .navbar-nav .nav-item .nav-link {
+        color: var(--gray_color);
+    }
+
+    header .slider .layer .content h1 {
+        font-size: 3rem
+    }
+
+    .navbar .navbar-collapse ul li:hover a {
+        display: inline-block;
+        border-bottom: 2px solid var(--main_color);
+    }
+    .about .personal_card {
+        flex-direction: column;
+    }
+    .about .personal_card .leftAbout {
+        width: 100%;
+    }
+    .about .personal_card .rightAbout {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .about .personal_card .rightAbout h2::before {
+        top:125%;
+        width: 80px;
+    }
+    .services .myservices div{
+        width: 48%;
+    }
+    .portofolio .cardElements .card{
+        width: 100%;
+    }
+    .portofolio .cardElements .card{
+        width: 47%;
+    }
+    .portofolio .opinions  .layer  .carousel .carousel-inner .carousel-item p{
+        padding: 0px 80px;
+    }
+    
+}
+@media(min-width:768px){
+    .portofolio .cardElements .card:nth-child(1),
+    .portofolio .cardElements .card:nth-child(2),
+    .portofolio .cardElements .card:nth-child(3){
+        margin-top: 0;
+    }
+}
+@media(max-width:768px) {
+    header .slider .layer .content h1 {
+        font-size: 2.7rem
+    }
+    .about .personal_card .leftAbout .data .myimg {
+        width: 44%;
+    }
+    
+    .about .personal_card .leftAbout .data .mydata {
+        width: 55%;
+    }
+    .services .myservices div{
+        width: 100%;
+    }
+    .services .work{
+        height: 80vh;
+    }
+    .services .work  .layer .statistics div{
+        width: 45%;
+    }
+
+    .work  {
+        height: 80vh;
+    }
+    .portofolio .cardElements .card{
+        width: 100%;
+    }
+    .portofolio .opinions  .layer  .carousel .carousel-inner .carousel-item p{
+        padding: 0px 20px;
+    }
+    .blog .cardElements .card{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .blog .cardElements .card:nth-child(1){
+        margin-top: 0;
+    }
+    .contact .layer .contactBox .message{
+        width: 100%;
+    }
+    .contact .layer .contactBox .touch{
+        margin-top: 50px;
+        width: 100%;
+    }
+
+}
+
+@media(max-width:576px) {
+    header .slider .layer .content h1 {
+        font-size: 2.3rem
+    }
+    .about .personal_card .leftAbout .data{
+        flex-direction: column
+    }
+    .about .personal_card .leftAbout .data .myimg {
+        width: 100%;
+    }
+    
+    .about .personal_card .leftAbout .data .mydata {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .portofolio .opinions  .layer  .carousel .carousel-inner .carousel-item p{
+        padding: 0px 0px;
+    }
+
+
+}
