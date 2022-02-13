@@ -18,7 +18,9 @@ body{
     transition: .3s;
     list-style: none;
 }
-
+body{
+    overflow: hidden;
+}
 section {
     padding: 40px 0;
 }
